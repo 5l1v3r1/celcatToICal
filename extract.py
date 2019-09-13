@@ -5,7 +5,7 @@ import datetime
 def extract():
 		
 	#output = open("output.xml","w") 
-	rq=urllib.request.Request('http://chronos.iut-velizy.uvsq.fr/EDTISTY/g71147.xml')
+	rq=urllib.request.Request('http://chronos.iut-velizy.uvsq.fr/EDTISTY/g112050.xml')
 	rq.add_header("Authorization", "Basic ZXR1aXN0eTppc3R5") # user:pass base64 encoded
 	site=urllib.request.urlopen(rq)
 	xmlResult=site.read().decode('utf8')
